@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Event Management</h1>
+    <form action="" class="app_form">
+        <label for="email">Enter your Email ID: </label>
+        <input type="email" id="email" name="emailid" required>
+        <br>
+        <br>
+        <label for="phone">Enter your phone number: +91- </label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10" required>
+        <br>
+        <br>
+        <label for="pin">Verify the Number PIN:</label>
+        <input type="text" id="pin" name="pin" size="4">
+        <input type="button" value="Verify" required>
+        <br>
+        <br>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required>
+        <br>
+        <br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" required>
+        <br>
+        <br>
+        <span>Gender: </span>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" id="female" value= "female">
+        <label for="female">Female</label>
+        <br>
+        <br>
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob">
+        <br>
+        <br>
+        <label for="event_type">What's the Event is about?</label>
+        <select name="event_type" id="event_type">
+        <option value="marriage">Marriage</option>
+        <option value="birthday">Birthday</option>
+        <option value="conference">Conference</option>
+        <option value="workshop">Workshop</option>
+        <option value="party">Party</option>
+        <option value="business">Business Event</option>
+        </select>
+        <br>
+        <br>
+        <label for="days">How long does the event go? (1 - 5) days</label>
+        <input type="number" id="days" min="1" max="5" required>
+        <br>
+        <br>
+        <label for="slot">Book your slot: </label>
+        <input type="date" id="slot" name="slot" required>
+        <br>
+        <br>
+        <label for="payment">Select your Payment system: </label>
+        <select name="payment" id="payment">
+            <option value="visa">VISA</option>
+            <option value="mastercard">MASTERCARD</option>
+            <option value="upi">UPI</option>
+            <option value="Net Banking">Net Banking</option>
+        </select>
+        <br>
+        <br>
+        <label for="extra">Provide some extra details here.
+        <br>
+        <br>
+        <textarea name="extra" id="extra" cols="30" rows="3" placeholder="Extra details"></textarea>
+        </label>
+        <br>
+        <input type="checkbox" name="terms" id="terms" required>
+        <label for="terms">I accept the <a href="./terms.txt">terms and conditions</a></label>
+        <br>
+        <br>
+        <center>
+        <input type="submit" name="submit" id="submit">
+        <input type="reset">
+        </center>
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+.app_form{
+    border: 2px solid black;
+    padding: 15px;
+    margin: 5px;
+    position: relative;
+    background-color: #E1FFB1;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
+
+
+body{
+    background-color: #C7F2A4;
+    
+}
+
+input{
+    height: 20px;
+}
+
+h1{
+    text-align: center;
+}
